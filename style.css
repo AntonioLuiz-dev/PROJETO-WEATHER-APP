@@ -1,284 +1,223 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(180deg, #b8c0c8, #5d6d7e);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #b8c0c8, #5d6d7e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .app {
-    width: 100%;
-    padding: 20px;
+  width: 100%;
+  padding: 20px;
 }
 
-/* 🔲 CARD PRINCIPAL MAIOR */
+/* 🌟 CARD COM GLASS GLOW */
 .weather-card {
-    max-width: 480px;
-    /* antes 420 */
-    margin: auto;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(18px);
-    border-radius: 26px;
-    padding: 40px 34px;
-    /* mais espaço interno */
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
-    text-align: center;
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(18px);
+  border-radius: 26px;
+  padding: 36px 30px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow:
+    0 30px 50px rgba(0,0,0,0.3),
+    inset 0 0 0 1px rgba(255,255,255,0.15);
+}
+
+.weather-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 26px;
+  pointer-events: none;
+  box-shadow: inset 0 0 30px rgba(255,255,255,0.15);
 }
 
 .title {
-    font-size: 2.1rem;
-    font-weight: 600;
+  font-size: 2.1rem;
+  font-weight: 600;
 }
 
 .subtitle {
-    margin-bottom: 26px;
-    opacity: 0.9;
-    font-size: 1rem;
+  margin-bottom: 24px;
+  opacity: .9;
 }
 
 .search {
-    display: flex;
-    gap: 14px;
-    margin-bottom: 26px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .search input {
-    flex: 1;
-    padding: 16px;
-    border-radius: 14px;
-    border: none;
-    font-size: 1rem;
+  flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
 }
 
 .search button {
-    padding: 16px 20px;
-    border-radius: 14px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .weather-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
 
+/* 🌤️ ÍCONE ANIMADO */
 .weather-main img {
-    width: 76px;
+  width: 70px;
 }
 
-/* 🌡️ TEMPERATURA MAIOR E COM UNIDADE */
+.animate-icon {
+  animation: iconPop 0.6s ease;
+}
+
+@keyframes iconPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) rotate(-8deg);
+  }
+  60% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
 #temperature {
-    font-size: 3.4rem;
-    font-weight: 600;
-}
-
-.unit {
-    font-size: 1.4rem;
-    margin-left: 4px;
-    opacity: 0.9;
+  font-size: 3.2rem;
+  font-weight: 600;
 }
 
 .unit-btn {
-    margin: 14px auto;
-    padding: 10px 18px;
-    border-radius: 22px;
-    border: none;
-    cursor: pointer;
-    font-size: 0.95rem;
+  margin: 16px auto;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 #description {
-    margin: 14px 0 22px;
-    text-transform: capitalize;
-    font-size: 1.1rem;
+  margin: 14px 0 22px;
+  text-transform: capitalize;
 }
 
 .details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-bottom: 26px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+  margin-bottom: 26px;
 }
 
 .details div {
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 16px;
-    padding: 18px;
-    font-size: 0.95rem;
+  background: rgba(255,255,255,0.25);
+  border-radius: 16px;
+  padding: 16px;
 }
 
 .details strong {
-    display: block;
-    margin-top: 8px;
-    font-size: 1.15rem;
+  display: block;
+  margin-top: 6px;
+  font-size: 1.1rem;
 }
 
+/* 📅 PREVISÃO */
 .forecast {
-    display: flex;
-    justify-content: center;
-    /* centraliza o conjunto */
-    gap: 14px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .forecast div {
-    width: 64px;
-    /* largura fixa deixa tudo alinhado */
-    background: rgba(255, 255, 255, 0.25);
-    padding: 14px 8px;
-    border-radius: 16px;
-    font-size: 0.9rem;
-    text-align: center;
+  width: 64px;
+  background: rgba(255,255,255,0.25);
+  padding: 12px 8px;
+  border-radius: 16px;
+  font-size: .85rem;
 }
 
-.error {
-    margin-top: 18px;
-    color: #ffdede;
-    font-size: 1rem;
-}
-
-.hidden {
-    display: none;
-}
-
-/* ✨ Animação da previsão ao trocar de cidade */
-.forecast div {
-    animation: fadeUp 0.5s ease forwards;
-    opacity: 0;
-}
-
-/* delay progressivo para cada dia */
-.forecast div:nth-child(1) {
-    animation-delay: 0.05s;
-}
-
-.forecast div:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.forecast div:nth-child(3) {
-    animation-delay: 0.15s;
-}
-
-.forecast div:nth-child(4) {
-    animation-delay: 0.2s;
-}
-
-.forecast div:nth-child(5) {
-    animation-delay: 0.25s;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 🌤️ Animação do ícone do clima */
-.weather-main img {
-    animation: iconFade 0.5s ease;
-}
-
-@keyframes iconFade {
-    from {
-        opacity: 0;
-        transform: scale(0.85) rotate(-5deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1) rotate(0);
-    }
-}
-
+/* 🕒 CARROSSEL HORÁRIO */
 .hourly-container {
-    margin-top: 18px;
-    overflow: hidden;
+  margin: 18px 0;
+  overflow: hidden;
 }
 
 .hourly-carousel {
-    display: flex;
-    gap: 14px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-bottom: 6px;
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  animation: scrollHours 28s linear infinite;
 }
 
-.hourly-carousel::-webkit-scrollbar {
-    display: none;
+.hourly-container:hover .hourly-carousel,
+.hourly-container:active .hourly-carousel {
+  animation-play-state: paused;
 }
 
 .hour {
-    min-width: 70px;
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 16px;
-    padding: 12px 8px;
-    text-align: center;
-    font-size: 0.85rem;
-    flex-shrink: 0;
+  min-width: 70px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 16px;
+  padding: 10px;
+  font-size: .85rem;
 }
 
 .hour img {
-    width: 36px;
+  width: 34px;
 }
 
-.hour strong {
-    display: block;
-    margin-bottom: 4px;
+.hidden {
+  display: none;
 }
 
-/* 🔄 ANIMAÇÃO SUAVE AO TROCAR CIDADE */
-.weather-info {
-  animation: fadeSlide 0.5s ease;
+/* 🫧 HOVER PULSE ELEVADO */
+.details div,
+.forecast div,
+.hour {
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
-@keyframes fadeSlide {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
+.details div:hover,
+.forecast div:hover,
+.hour:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+}
+
+@keyframes scrollHours {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 420px) {
+  .details {
+    grid-template-columns: 1fr;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  #temperature {
+    font-size: 2.6rem;
   }
-}
-
-/* 🦴 SKELETON LOADING */
-.skeleton {
-  margin: 30px 0;
-}
-
-.sk-line {
-  height: 18px;
-  background: rgba(255,255,255,0.35);
-  border-radius: 10px;
-  margin-bottom: 12px;
-  animation: pulse 1.4s infinite;
-}
-
-.sk-line.big {
-  height: 28px;
-}
-
-@keyframes pulse {
-  0% { opacity: .5; }
-  50% { opacity: .9; }
-  100% { opacity: .5; }
 }

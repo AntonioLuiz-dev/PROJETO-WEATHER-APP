@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App | Portfólio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Clima Agora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <main class="app">
         <div class="weather-card">
 
@@ -25,25 +24,17 @@
                 <button id="search-btn">Buscar</button>
             </div>
 
-            <!-- SKELETON -->
-            <div class="skeleton hidden" id="skeleton">
-                <div class="sk-line big"></div>
-                <div class="sk-line"></div>
-                <div class="sk-line"></div>
-            </div>
-
             <div class="weather-info hidden" id="weather-info">
-
                 <h2 id="city-name"></h2>
 
                 <div class="weather-main">
-                    <img id="weather-icon" alt="Clima">
+                    <img id="weather-icon" />
                     <span id="temperature"></span>
                 </div>
 
-                <!-- HORAS -->
+                <!-- CARROSSEL HORÁRIO -->
                 <div class="hourly-container">
-                    <div class="hourly-carousel" id="hourly"></div>
+                    <div class="hourly-carousel" id="hourly-carousel"></div>
                 </div>
 
                 <button id="toggle-unit" class="unit-btn">Alternar °C / °F</button>
@@ -65,11 +56,11 @@
                     </div>
                 </div>
 
+                <!-- PREVISÃO 5 DIAS -->
                 <div class="forecast" id="forecast"></div>
             </div>
 
             <p class="error hidden" id="error">Cidade não encontrada 😕</p>
-
         </div>
     </main>
 
