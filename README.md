@@ -1,95 +1,105 @@
-# 🌤️ Weather App – Aplicação de Clima
+🌤️ Clima Agora
 
-Uma aplicação moderna e responsiva de previsão do tempo, desenvolvida com **HTML, CSS e JavaScript puro**, consumindo a API do **OpenWeatherMap**. O projeto foi pensado para demonstrar boas práticas de front-end, foco em UX/UI, animações suaves e design atual com efeito *glassmorphism*.
+Aplicação web moderna de previsão do tempo que exibe informações climáticas em tempo real, previsão horária, previsão diária, gráficos de temperatura e localização automática do usuário, tudo com uma interface elegante em Glassmorphism, animações suaves e foco total na experiência do usuário.
 
----
+🔗 Demo: (adicione aqui o link do deploy quando subir no Vercel)
 
-## 🚀 Funcionalidades
+✨ Funcionalidades
 
-* 🔍 Busca de clima por cidade
-* 🌡️ Alternância entre **Celsius e Fahrenheit**
-* 📍 Exibição de cidade e país
-* ☁️ Ícone dinâmico de acordo com a condição climática
-* 📊 Informações detalhadas:
+🔍 Busca de clima por cidade
 
-  * Sensação térmica
-  * Umidade
-  * Velocidade do vento
-* 🕒 **Previsão por hora** em carrossel infinito automático
-* 📅 **Previsão para os próximos dias**
-* 💾 Salvamento da última cidade pesquisada (LocalStorage)
-* ✨ Animações suaves e interações ao passar o mouse
-* 🧊 Design com **Glassmorphism + Glass Glow**
-* 📱 Totalmente responsivo (desktop e mobile)
+📍 Geolocalização automática do usuário
 
----
+🌡️ Temperatura atual com alternância entre °C / °F
 
-## 🖥️ Demonstração
+🕒 Previsão das próximas horas em carrossel infinito
 
-> Interface adaptada para **desktop e mobile**, com foco em legibilidade e experiência do usuário.
+📅 Previsão dos próximos dias
 
----
+Temperatura máxima e mínima
 
-## 🛠️ Tecnologias Utilizadas
+Destaque do dia atual com badge “Hoje”
 
-* **HTML5** – Estrutura semântica
-* **CSS3** –
+Tooltip com detalhes (descrição, umidade e vento)
 
-  * Flexbox e Grid
-  * Media Queries
-  * Animações e transições
-  * Glassmorphism
-* **JavaScript (ES6+)** –
+📈 Gráfico de variação de temperatura
 
-  * Consumo de API (fetch)
-  * Manipulação do DOM
-  * LocalStorage
-  * Lógica de conversão de temperatura
-* **API**: OpenWeatherMap
+🧊 Design moderno com Glassmorphism
 
----
+✨ Animações suaves e efeitos de hover
 
-## 📂 Estrutura do Projeto
+📱 Totalmente responsivo (mobile-first)
 
-```
-📁 weather-app
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+⚡ Ícones com lazy loading
 
----
+💾 Última cidade salva no localStorage
 
-## 🔑 Configuração da API
+🛠️ Tecnologias Utilizadas
 
-Este projeto utiliza a **OpenWeatherMap API**.
+HTML5
 
-## 📈 Possíveis Melhorias Futuras
+CSS3
 
-* 🌍 Geolocalização automática
-* 🌙 Modo escuro/claro
-* 📊 Gráficos de variação de temperatura
-* ⚛️ Migração para React
-* 🧪 Testes automatizados
+Flexbox
 
----
+Grid
 
-## 👨‍💻 Autor
+Animações e transições
 
-**Antonio Luiz Santos**
-Desenvolvedor Front-end em transição de carreira para Full Stack.
+Glassmorphism
 
-* 💼 Em busca de oportunidades como **Estagiário / Júnior Front-end**
-* 🚀 Estudando JavaScript, React e Back-end
+JavaScript (Vanilla JS)
 
----
+OpenWeather API
 
-## 📄 Licença
+Canvas API (gráfico de temperatura)
 
-Este projeto está sob a licença **MIT**.
-Sinta-se à vontade para usar, estudar e evoluir este código.
+Geolocation API
 
----
+🎨 Experiência do Usuário (UX)
 
-⭐ Se você gostou do projeto, deixe uma estrela no repositório!
+Este projeto foi desenvolvido com foco em:
+
+Interface limpa e intuitiva
+
+Feedback visual através de animações
+
+Leitura fácil das informações
+
+Performance e carregamento otimizado
+
+Interação fluida em dispositivos móveis e desktop
+
+🔑 Configuração da API
+
+Este projeto utiliza a OpenWeather API.
+
+📸 Preview
+
+(adicione prints ou GIFs da aplicação aqui — isso valoriza MUITO o projeto)
+
+📌 Próximas Melhorias (Roadmap)
+
+🌙 Modo escuro / claro automático
+
+🔔 Alertas climáticos
+
+📊 Mais tipos de gráficos
+
+⚛️ Migração para React
+
+🌍 Internacionalização (i18n)
+
+👨‍💻 Autor
+
+Desenvolvido com dedicação por Antonio Luiz Santos
+
+💼 Portfólio: (adicione quando publicar)
+
+💻 GitHub: https://github.com/AntonioLuiz-dev
+
+🔗 LinkedIn: (adicione seu LinkedIn)
+
+❤️ Considerações Finais
+
+Este projeto foi criado com o objetivo de praticar JavaScript puro, consumo de APIs, manipulação do DOM, boas práticas de UI/UX e organização de código — servindo também como projeto de portfólio profissional.
