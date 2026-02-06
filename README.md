@@ -1,4 +1,4 @@
-# 🌤️ Weather App — Clima em Tempo Real
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/95eb941c-eb78-4578-92bf-063b94eb6162" /># 🌤️ Weather App — Clima em Tempo Real
 
 Aplicação web moderna de clima desenvolvida com **HTML, CSS e JavaScript puro**, consumindo a API do **OpenWeatherMap**.  
 O projeto foi pensado com foco em **experiência do usuário (UX)**, **design limpo** e **boas práticas de front-end**, sendo ideal para portfólio.
@@ -12,8 +12,7 @@ https://antonioluiz-dev.github.io/PROJETO-WEATHER-APP/
 
 ## 📸 Preview
 
-<img src="https://github.com/AntonioLuiz-dev/PROJETO-WEATHER-APP/blob/main/assets/mockup.png?raw=true
-"500px"/>
+<img src="<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/12a7b4f1-689f-4ca2-9657-c044485885b4"500px"/>
 
 ---
 
