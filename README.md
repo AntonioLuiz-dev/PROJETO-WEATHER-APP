@@ -6,7 +6,7 @@ O projeto foi pensado com foco em **experiência do usuário (UX)**, **design li
 ---
 
 ## 🔗 Demonstração
-> (adicione aqui o link do GitHub Pages quando publicar)
+https://antonioluiz-dev.github.io/PROJETO-WEATHER-APP/
 
 ---
 
