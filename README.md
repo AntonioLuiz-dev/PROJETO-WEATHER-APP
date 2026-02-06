@@ -11,7 +11,7 @@ O projeto foi pensado com foco em **experiência do usuário (UX)**, **design li
 ---
 
 ## 📸 Preview
-> (adicione screenshots ou um GIF do app em funcionamento)
+https://github.com/AntonioLuiz-dev/PROJETO-WEATHER-APP/blob/main/assets/mockup.png?raw=true
 
 ---
 
