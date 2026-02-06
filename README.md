@@ -2,8 +2,6 @@
 
 Aplicação web moderna de previsão do tempo que exibe informações climáticas em tempo real, previsão horária, previsão diária, gráficos de temperatura e localização automática do usuário, tudo com uma interface elegante em Glassmorphism, animações suaves e foco total na experiência do usuário.
 
-🔗 Demo: (adicione aqui o link do deploy quando subir no Vercel)
-
 ✨ Funcionalidades
 
 🔍 Busca de clima por cidade
@@ -94,11 +92,11 @@ Este projeto utiliza a OpenWeather API.
 
 Desenvolvido com dedicação por Antonio Luiz Santos
 
-💼 Portfólio: (adicione quando publicar)
+💼 Portfólio: https://antonioluiz-dev.github.io/MEU-PORTIFOLIO/
 
 💻 GitHub: https://github.com/AntonioLuiz-dev
 
-🔗 LinkedIn: (adicione seu LinkedIn)
+🔗 LinkedIn: https://www.linkedin.com/in/antonio-luiz-dos-santos/
 
 ❤️ Considerações Finais
 
