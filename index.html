@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+        <div class="weather-card">
+
+            <h1 class="title">🌤️ Clima Agora</h1>
+            <p class="subtitle">Clima em tempo real</p>
+
+            <div class="search">
+                <input id="city-input" placeholder="Digite a cidade..." />
+                <button id="search-btn">Buscar</button>
+            </div>
+
+            <!-- SKELETON -->
+            <div class="skeleton hidden" id="skeleton">
+                <div class="sk-line big"></div>
+                <div class="sk-line"></div>
+                <div class="sk-line"></div>
+            </div>
+
+            <div class="weather-info hidden" id="weather-info">
+
+                <h2 id="city-name"></h2>
+
+                <div class="weather-main">
+                    <img id="weather-icon" alt="Clima">
+                    <span id="temperature"></span>
+                </div>
+
+                <!-- HORAS -->
+                <div class="hourly-container">
+                    <div class="hourly-carousel" id="hourly"></div>
+                </div>
+
+                <button id="toggle-unit" class="unit-btn">Alternar °C / °F</button>
+
+                <p id="description"></p>
+
+                <div class="details">
+                    <div>
+                        <span>Sensação</span>
+                        <strong id="feels-like"></strong>
+                    </div>
+                    <div>
+                        <span>Umidade</span>
+                        <strong id="humidity"></strong>
+                    </div>
+                    <div>
+                        <span>Vento</span>
+                        <strong id="wind"></strong>
+                    </div>
+                </div>
+
+                <div class="forecast" id="forecast"></div>
+            </div>
+
+            <p class="error hidden" id="error">Cidade não encontrada 😕</p>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
