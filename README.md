@@ -11,7 +11,9 @@ https://antonioluiz-dev.github.io/PROJETO-WEATHER-APP/
 ---
 
 ## 📸 Preview
-https://github.com/AntonioLuiz-dev/PROJETO-WEATHER-APP/blob/main/assets/mockup.png?raw=true
+
+<img src="https://github.com/AntonioLuiz-dev/PROJETO-WEATHER-APP/blob/main/assets/mockup.png?raw=true
+"500px"/>
 
 ---
 
